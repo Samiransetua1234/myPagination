@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.remove-arrow::-webkit-inner-spin-button,
+.remove-arrow::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.remove-arrow {
+    -moz-appearance: textfield;
+}
+
+.custom-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: #e8f1fb;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='blue' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 5px;  
+  }
+
+  .scrollbar::-webkit-scrollbar {
+    display: none;
+}
+  
+.gradient-button {
+    background-color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    outline: none;
+    transition: box-shadow 0.3s;
+  }
+  
+  .gradient-button:focus {
+    box-shadow: 0 0 0 3px rgba(103, 99, 214, 0.6), 0 0 10px rgba(103, 99, 214, 0.6);
+  }
+  
