@@ -5,18 +5,23 @@ import { BsDoorOpenFill } from "react-icons/bs";
 import { CiCirclePlus } from "react-icons/ci";
 import { AiOutlineFileSearch } from "react-icons/ai";
 
+
 const Currentvul = () => {
   return (
     <section className="flex flex-col gap-3 bg-white py-3 px-6 rounded-md">
-      <div className="flex flex-row justify-between">
-        <h1 className="text-lg font-bold">Current Vulnerabilities (Open)</h1>
-        <div className="flex flex-row items-center gap-4 p-1 rounded-md bg-gradient-to-r from-[#6752f6] to-[#009ffd]">
+      <div className="flex flex-row justify-between items-center">
+        <h1 className="text-lg font-bold flex-shrink">
+          Current Vulnerabilities (Open)
+        </h1>
+        <div className="flex flex-row items-center gap-4 p-1 flex-shrink-0 rounded-md bg-gradient-to-r from-[#6752f6] to-[#009ffd]">
           <TbAdjustmentsFilled className="rotate-90 p-[0.12rem] text-2xl rounded-sm bg-white text-[#6752f6]" />
-          <span className="text-white text-xs">Filter & Sort</span>
+          <span className="text-white text-xs hidden sm:inline-block">
+            Filter & Sort
+          </span>
         </div>
       </div>
-      <div>
-        <table className="w-full">
+      <div className="overflow-x-auto w-full scrollbar">
+        <table className="w-[73.6rem]">
           <tbody className="w-full">
             <tr className="flex flex-row justify-between py-1 px-7 rounded-md font-semibold bg-[#8b83d34b]">
               <td className="text-gray-600">Open TCP Port 2095</td>
@@ -45,10 +50,12 @@ const Currentvul = () => {
         </table>
       </div>
       <p className="font-semibold py-1 px-7">CVSS 8.6</p>
-      <div className="flex flex-row gap-3">
-        <div className="bg-[#f6f6f4] rounded-md w-[21rem] px-2 py-3">
-          <table className="text-sm font-semibold w-2/3">
-            <caption className="text-sm font-semibold">References</caption>
+      <div className="flex flex-col md:flex-row gap-3">
+        <div className="bg-[#f6f6f4] rounded-md w-full sm:w-3/4 md:w-1/2 lg:w-[21rem] px-2 py-3">
+          <table className="text-sm font-semibold w-full lg:w-2/3">
+            <caption className="text-sm text-left font-semibold">
+              References
+            </caption>
             <tbody className="">
               <tr>
                 <td>BID</td>
@@ -65,8 +72,8 @@ const Currentvul = () => {
             </tbody>
           </table>
         </div>
-        <div className="bg-[#f6f6f4] rounded-md w-[21rem] px-2 py-3">
-          <span className="text-sm font-semibold">See Also</span>
+        <div className="bg-[#f6f6f4] rounded-md w-full sm:w-3/4 md:w-1/2 lg:w-[21rem] px-2 py-3">
+          <span className="text-sm text-left font-semibold">See Also</span>
           <div className="text-sm font-semibold flex flex-col text-blue-600">
             <a href="">http:// Lorem, ipsum dolor sit.com</a>
             <a href="">http:// Lorem, ipsum dolor sit.com</a>

@@ -7,15 +7,15 @@ import { AiOutlineDownload } from "react-icons/ai";
 const Pastvul = () => {
   return (
     <section className="flex flex-col gap-3">
-      <div className="flex flex-row justify-between">
+      <div className="flex flex-row justify-between items-center">
         <h1 className="text-lg font-bold">Past Vulnerabilities (Fixed)</h1>
-        <div className="flex flex-row items-center gap-4 p-1 rounded-md bg-gradient-to-r from-[#6752f6] to-[#009ffd]">
+        <div className="flex flex-row items-center gap-4 p-1 flex-shrink-0 rounded-md bg-gradient-to-r from-[#6752f6] to-[#009ffd]">
           <TbAdjustmentsFilled className="rotate-90 p-[0.12rem] text-2xl rounded-sm bg-white text-[#6752f6]" />
-          <span className="text-white text-xs">Filter & Sort</span>
+          <span className="text-white text-xs hidden sm:inline-block">Filter & Sort</span>
         </div>
       </div>
-      <div>
-        <table className="w-full text-left rounded-md overflow-hidden">
+      <div className="overflow-x-scroll w-full scrollbar">
+        <table className="w-[76.5rem] text-left rounded-md overflow-hidden">
           <thead className="bg-[#e9f1fb]">
             <tr>
               <th className="pl-6 w-1/2">Name</th>

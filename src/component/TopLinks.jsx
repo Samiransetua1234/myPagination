@@ -5,7 +5,7 @@ import { BsDoorOpenFill } from "react-icons/bs";
 
 export default function TopLinks() {
   return (
-    <section className="inline-flex">
+    <section className="inline-flex w-[44rem]">
       <div className="inline-flex flex-col gap-3">
         <div className="inline-flex">
           <div className="inline-flex flex-row gap-2 bg-white p-2 font-semibold rounded-md shadow-lg">
