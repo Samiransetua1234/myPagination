@@ -21,7 +21,7 @@ const Currentvul = () => {
         </div>
       </div>
       <div className="overflow-x-auto w-full scrollbar">
-        <table className="w-[73.6rem]">
+        <table className="w-[72.3rem]">
           <tbody className="w-full">
             <tr className="flex flex-row justify-between py-1 px-7 rounded-md font-semibold bg-[#8b83d34b]">
               <td className="text-gray-600">Open TCP Port 2095</td>
