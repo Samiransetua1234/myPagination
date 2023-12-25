@@ -38,10 +38,10 @@ const Otp = (props) => {
     <span className=' bg-clip-text text-transparent bg-gradient-to-br from-purple-500 to-blue-600 font-bold mb-4'>Enter OTP Sent To <br /> {email}</span>
     <form action="" className='flex-col gap-3 w-full grid justify-items-stretch ..."' onSubmit={handleSubmit}>
     <div className='flex flex-row justify-around px-1'>
-    <input type="number" className='w-10 md:w-12 md:h-12 h-10 px-4 py-2 outline-none border-2 border-gray-500 remove-arrow rounded-md' onChange={(e)=> handleInputChange(e, setIn1, inRef2, null)} ref={inRef1} autoFocus/>
-    <input type="number" className='w-10 md:w-12 md:h-12 h-10 px-4 py-2 outline-none border-2 border-gray-500 remove-arrow rounded-md' onChange={(e)=> handleInputChange(e, setIn2, inRef3, inRef1)} ref={inRef2}/>
-    <input type="number" className='w-10 h-10 md:w-12 md:h-12 px-4 py-2 outline-none border-2 border-gray-500 remove-arrow rounded-md' onChange={(e)=> handleInputChange(e, setIn3, inRef4, inRef2)} ref={inRef3}/>
-    <input type="number" className='w-10 h-10 md:w-12 md:h-12 px-4 py-2 outline-none border-2 border-gray-500 remove-arrow rounded-md' onChange={(e)=> handleInputChange(e, setIn4, null, inRef3)} ref={inRef4}/>
+    <input type="number" className='w-10 sm:w-12 sm:h-12 h-10 px-4 py-2 outline-none border-2 border-gray-500 remove-arrow rounded-md' onChange={(e)=> handleInputChange(e, setIn1, inRef2, null)} ref={inRef1} autoFocus/>
+    <input type="number" className='w-10 sm:w-12 sm:h-12 h-10 px-4 py-2 outline-none border-2 border-gray-500 remove-arrow rounded-md' onChange={(e)=> handleInputChange(e, setIn2, inRef3, inRef1)} ref={inRef2}/>
+    <input type="number" className='w-10 h-10 sm:w-12 sm:h-12 px-4 py-2 outline-none border-2 border-gray-500 remove-arrow rounded-md' onChange={(e)=> handleInputChange(e, setIn3, inRef4, inRef2)} ref={inRef3}/>
+    <input type="number" className='w-10 h-10 sm:w-12 sm:h-12 px-4 py-2 outline-none border-2 border-gray-500 remove-arrow rounded-md' onChange={(e)=> handleInputChange(e, setIn4, null, inRef3)} ref={inRef4}/>
     </div>
     <p className='text-xs justify-self-end ...'>Didn't Receive OTP ? <span className='text-blue-500 font-bold cursor-pointer' onClick={()=> handleResend }>Resend</span></p>
     <button className='p-3 mt-3 bg-gradient-to-r from-purple-500 to-blue-500 rounded-md text-white font-semibold'>Submit</button>
